@@ -3,3 +3,10 @@
 html {
     font-family: 'Roboto', sans-serif;
 }
+
+@media screen and (max-width: 768px) {
+    html {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

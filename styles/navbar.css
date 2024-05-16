@@ -2,8 +2,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 1rem 12rem;
 
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+
+.nav-bar img{
+    width: 50px;
+    padding: 0 0.2em;
+    margin-right: 1em;
+    border-radius: 100%;
 }
 
 .list-container {
@@ -24,7 +38,7 @@
 
 .list-container a {
     text-decoration: none;
-    color: #333;
+    color: rgb(46, 46, 46);
     font-size: 0.8rem;
 }
 
@@ -92,5 +106,12 @@
 
     .nav-bar ul{
         display: none;
+    }
+
+    .nav-bar{
+        padding-top:0.5em;
+        padding-bottom:0.5em;
+        padding-left: 1em;
+        padding-right: 1em;
     }
 }

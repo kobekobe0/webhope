@@ -1,0 +1,86 @@
+.container {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 3em;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tab-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tab-link {
+    text-decoration: none;
+    color: black;
+    flex: 1;
+    text-align: center;
+}
+
+.tab {
+    padding: 3em;
+    border-bottom: 2px solid #ccc;
+
+}
+
+.active-tab {
+    border-bottom: 2px solid #999;
+}
+
+.coffee-type {
+    display: none;
+}
+#coffeeMenu {
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.menu-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.menu-table th, .menu-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.menu-table th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 768px) {
+    .tab-row {
+        flex-direction: column;
+    }
+
+    .tab {
+        padding: 1em;
+    }
+
+    .coffee-type {
+        display: block;
+    }
+
+    #coffeeMenu {
+        padding: 0;
+    }
+
+    .menu-table th, .menu-table td {
+        padding: 5px;
+    }
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="/index.css">  
+    <link rel="stylesheet" href="/styles/menu/header.css">
+    <link rel="stylesheet" href="/styles/menu/tab.css">
+    <link rel="stylesheet" href="/styles/about/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/logo.jpg">
+    <title>Brewsko | About</title>
+</head>
+<body>
+    <main>
+        <section class="nav-bar">
+                <div class="logo">
+                    <img src="./assets/logo.jpg" alt="logo">
+                    <h3>Brew'sKo</h3>
+                </div>
+                <div class="list-container">
+                    <ul>
+                        <li>
+                            <a href="/index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="/menu.html">Menu</a>
+                        </li>
+                        <li>
+                            <a href="/about.html">About</a>
+                        </li>
+
+                        <li>
+                            <a href="/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </section>
+            
+            <section class="nav-mobile">
+                <ul>
+                    <li>
+                        <a href="/index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="/menu.html">Menu</a>
+                    </li>
+                    <li>
+                        <a href="/about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="header">
+                <h2>About Us</h2>
+            </section>
+
+            <section class="about">
+                <div class="about-head">
+                    <img src="/assets/drinks.jpg" alt="">
+                    <div class="about-story">
+                        <h3>Our Story</h3>
+                        <p>
+                            Founded in 2019, Brew's Ko was born out of a passion for exceptional coffee and a desire to create a welcoming space for people to connect. Our name, a playful nod to the idea of a "brewing company," reflects our commitment to the craft of coffee making and our belief in the power of community.
+                        </p>
+                        <h3>Our Coffee</h3>
+                        <p>
+                            At Brew's Ko, we take coffee seriously. We source the finest beans from around the world, ensuring they are ethically traded and sustainably grown. Our skilled baristas bring out the best in each bean, using precise brewing methods to deliver rich, flavorful cups of coffee. Whether you prefer a bold espresso, a smooth latte, or a refreshing cold brew, you'll find it here.
+                        </p>
+                        <h3>Our Menu</h3>
+                        <p>
+                            While coffee is our cornerstone, our menu offers a delightful array of options to satisfy any craving. Enjoy our freshly baked pastries, hearty sandwiches, and healthy salads, all made with high-quality, locally sourced ingredients. We also offer a selection of teas, smoothies, and specialty drinks to cater to diverse tastes.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about-2">
+            <div class="about-experience">
+                <h3>The Brew's Ko Experience</h3>
+                <div class="carousel">
+                <div class="carousel-images">
+                    <img src="/assets/1.jpg" alt="">
+                    <img src="/assets/2.jpg" alt="">
+                    <img src="/assets/3.jpg" alt="">
+                    <img src="/assets/4.jpg" alt="">
+                    <img src="/assets/5.jpg" alt="">
+                    <img src="/assets/6.jpg" alt="">
+                    <img src="/assets/7.jpg" alt="">
+                    <img src="/assets/8.jpg" alt="">
+                </div>
+                </div>
+            </div>
+            </section>
+            
+            <section class="footer">
+                <div class="footer-container">
+                    <div class="footer-logo">
+                        <img src="./assets/logo.jpg" alt="logo">
+                        <h3>Brew'sKo</h3>
+                    </div>
+                    <div class="footer-list">
+                        <ul>
+                            <li>
+                                <a href="/index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="/menu.html">Menu</a>
+                            </li>
+                            <li>
+                                <a href="/about.html">About</a>
+                            </li>
+                            <li>
+                                <a href="/contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-social">
+                        <ul>
+                            <li>
+                                <a href="https://web.facebook.com/brewskocoffeeshack" target="_blank">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/brewskocoffeeshack/" target="_blank">Instagram</a>
+                            </li>
+                            <li>
+                                <p href="#">brewskocoffeeshack@gmail.com</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+</body>
+<script src="/js/tab.js"></script>
+<script src="/js/navbar.js"></script>
+<script>
+window.onload = function() {
+  if (window.innerWidth > 768) { // Only clone images if viewport width is more than 768px
+    const carouselImages = document.querySelector('.carousel-images');
+    const images = Array.from(carouselImages.children);
+
+    images.forEach(image => {
+      const clone = image.cloneNode(true);
+      carouselImages.appendChild(clone);
+    });
+  }
+};
+</script>
+</html>

@@ -1,0 +1,190 @@
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.header h2 {
+    font-size: 3em;
+    margin: 0;
+    font-weight: 300;
+}
+
+.about {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2em 0;
+  gap: 1em;
+}
+
+.about-head img {
+  width: 50%;
+  height: auto;
+}
+
+.about-story {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.about-story h3 {
+  font-size: 1.2em;
+  margin: 0;
+  font-weight: 500;
+}
+
+.about-story p {
+  margin-bottom: 1em;
+}
+
+.about-2 {
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 2em;
+  margin-bottom: 4em;
+}
+
+.about-2 .about-experience {
+  text-align: center;
+}
+
+.about-2 .about-experience h3 {
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  font-weight: 400;
+  margin: 2em;
+}
+
+.about-2 .about-experience div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-2 .about-experience img {
+  width: 23%;
+  height: auto;
+}
+
+.carousel {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.carousel::before,
+.carousel::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50px; 
+  z-index: 2;
+}
+
+.carousel::before {
+  left: 0;
+  background: linear-gradient(to right, white, transparent);
+}
+
+.carousel::after {
+  right: 0;
+  background: linear-gradient(to left, white, transparent);
+}
+
+.carousel-images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 200%; 
+  animation: scroll 20s linear infinite;
+}
+
+.carousel img {
+  width: 12.5%; 
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  margin: 2em;
+  transition: all ease-in-out 0.2s;
+}
+.carousel img:hover {
+    transform: scale(1.1);
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+@media (max-width: 768px) {
+  .carousel::before,
+  .carousel::after {
+    width: 0;
+  }
+
+  .carousel-images {
+    width: 100%; 
+    animation: none;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 10px;
+  }
+
+  .carousel img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-2 {
+    width: 90%;
+    margin-top: 0;
+  }
+
+  .about-2 .about-experience div {
+    flex-direction: column;
+  }
+
+  .about-2 .about-experience img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .about-2 .about-experience h3 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-weight: 400;
+    margin: 1em;
+    margin-bottom: 2em;
+    }
+}
+
+
+@media (max-width: 768px) {
+  .about {
+    width: 90%;
+  }
+
+  .about-head {
+    flex-direction: column;
+  }
+
+  .about-head img {
+    width: 100%;
+  }
+
+  .about-story {
+    width: 100%;
+  }
+}

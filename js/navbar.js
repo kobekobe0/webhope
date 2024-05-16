@@ -21,4 +21,5 @@ document.addEventListener('DOMContentLoaded', function () {
     navMobile.addEventListener('click', () => {
         navMobile.classList.remove('active');
     });
+
 });

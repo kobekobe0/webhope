@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="/index.css">  
+    <link rel="stylesheet" href="/styles/menu/header.css">
+    <link rel="stylesheet" href="/styles/menu/tab.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/logo.jpg">
+    <title>Brewsko | Menu</title>
+</head>
+<body>
+    <main>
+        <section class="nav-bar">
+                <div class="logo">
+                    <img src="./assets/logo.jpg" alt="logo">
+                    <h3>Brew'sKo</h3>
+                </div>
+                <div class="list-container">
+                    <ul>
+                        <li>
+                            <a href="/index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="/menu.html">Menu</a>
+                        </li>
+                        <li>
+                            <a href="/about.html">About</a>
+                        </li>
+
+                        <li>
+                            <a href="/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </section>
+            
+            <section class="nav-mobile">
+                <ul>
+                    <li>
+                        <a href="/index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="/menu.html">Menu</a>
+                    </li>
+                    <li>
+                        <a href="/about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="header-menu">
+                <div class="header-text">
+                    <h1>MENU</h1>
+                </div>
+            </section>
+
+<div class="container">
+
+    <div class="tab-row">
+        <a href="#" class="tab-link" onclick="openCoffeeType(event, 'CoffeeBased');">
+            <div class="tab">Coffee Based Drinks</div>
+        </a>
+        <a href="#" class="tab-link" onclick="openCoffeeType(event, 'Espresso');">
+            <div class="tab">Non-espresso</div>
+        </a>
+        <a href="#" class="tab-link" onclick="openCoffeeType(event, 'Latte');">
+            <div class="tab">Foods</div>
+        </a>
+    </div>
+
+    <div id="CoffeeBased" class="coffee-type" style="display:none">
+        <div id="coffeeMenu"></div>
+    </div>
+
+    <div id="Espresso" class="coffee-type" style="display:none">
+        <div id="noncoffeemenu"></div>
+    </div>
+
+    <div id="Latte" class="coffee-type" style="display:none">
+        <div id="foodmenu"></div>
+    </div>
+</div>
+
+            
+            <section class="footer">
+                <div class="footer-container">
+                    <div class="footer-logo">
+                        <img src="./assets/logo.jpg" alt="logo">
+                        <h3>Brew'sKo</h3>
+                    </div>
+                    <div class="footer-list">
+                        <ul>
+                            <li>
+                                <a href="/index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="/menu.html">Menu</a>
+                            </li>
+                            <li>
+                                <a href="/about.html">About</a>
+                            </li>
+                            <li>
+                                <a href="/contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-social">
+                        <ul>
+                            <li>
+                                <a href="https://web.facebook.com/brewskocoffeeshack" target="_blank">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/brewskocoffeeshack/" target="_blank">Instagram</a>
+                            </li>
+                            <li>
+                                <p href="#">brewskocoffeeshack@gmail.com</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+</body>
+<script src="/js/tab.js"></script>
+<script src="/js/navbar.js"></script>
+</html>
